@@ -1,0 +1,170 @@
+/* Apply a global font family to all elements for consistent text appearance */
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Remove margin from the body to eliminate space around the content */
+body {
+  margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex; /* Flexbox layout for aligning items horizontally */
+  background-color: rgb(60, 124, 197); /* Blue background for navbar */
+  position: fixed; /* Fixed position to keep the navbar at the top */
+  top: 0; /* Aligns the navbar to the top of the page */
+  width: 100%; /* Makes the navbar stretch across the full width of the page */
+  font-size: 20px; /* Set font size for the text inside navbar */
+}
+
+/* Right side of the navbar */
+.nav-right {
+  text-align: right; /* Aligns the navbar items to the right */
+  float: right; /* Positions the right-aligned items */
+}
+
+/* Styling for each list item inside the navbar */
+.nav-right li {
+  display: inline; /* Displays the list items horizontally */
+  float: left; /* Aligns the items to the left */
+  padding-left: 15px; /* Adds space between each list item */
+}
+
+/* Styling for links inside navbar */
+.nav-right li a {
+  display: block; /* Makes the entire area of the list item clickable */
+  padding: 8px; /* Adds padding around the link */
+  text-decoration: none; /* Removes underline from links */
+  color: white; /* Sets link color to white */
+}
+
+/* Styling for dropdowns inside the navbar */
+.nav-right li ul {
+  list-style-type: none; /* Removes bullet points from the list */
+  margin: 0; /* Removes margin around the list */
+  padding: 0; /* Removes padding around the list */
+  overflow: hidden; /* Ensures content fits within the dropdown */
+  background-color: #333; /* Dark background for the dropdown */
+}
+
+/* Change the background color on hover */
+.nav-right li a:hover {
+  background-color: rgb(31, 199, 106); /* Light green background on hover */
+}
+
+/* Active link style in the navbar */
+.nav-right .active {
+  background-color: #04AA6D; /* Green background for the active link */
+}
+
+/* Body section styles */
+.section-body {
+  padding-top: 30px; /* Adds space at the top */
+  padding-left: 15px; /* Adds space on the left side */
+}
+
+/* Styling for section headings */
+.section-body h4 {
+  font-size: large; /* Larger font size for section titles */
+}
+
+/* Sidebar navigation styles */
+.vertical-nav {
+  padding-top: 10px; /* Adds space at the top of the sidebar */
+}
+
+/* Styling for unordered lists inside the section */
+.section-body ul {
+  list-style-type: none; /* Removes bullet points from the list */
+  width: 18%; /* Sidebar takes up 18% of the page width */
+  background-color: #d6e4f0; /* Light blue background */
+  position: fixed; /* Fixes the sidebar in place */
+  height: auto; /* Allows the height to adjust based on content */
+  overflow: auto; /* Enables scrolling if content exceeds the container */
+}
+
+/* Styling for links in the sidebar */
+.section-body li a {
+  display: block; /* Makes the entire link area clickable */
+  color: #000; /* Sets link color to black */
+  padding: 8px 16px; /* Adds padding around the link */
+  text-decoration: none; /* Removes underline from links */
+}
+
+/* Active link in the sidebar */
+.section-body li a.active {
+  background-color: #04AA6D; /* Green background for active link */
+  color: white; /* Changes text color to white */
+}
+
+/* Hover effect for sidebar links */
+.section-body li a:hover:not(.active) {
+  background-color: #555; /* Dark background on hover */
+  color: white; /* Changes text color to white */
+}
+
+/* Gallery section styles */
+.image-holder {
+  border: 1px solid #ccc; /* Adds a light border around the book images */
+  transition-duration: 200ms; /* Smooth transition for hover effect */
+  transition-timing-function: ease-out; /* Smooth easing for the hover effect */
+}
+
+/* Hover effect for book images */
+.image-holder:hover {
+  border: 1px solid #777; /* Darkens the border on hover */
+  transform: scale(1.05, 1.05); /* Slightly enlarges the image */
+}
+
+/* Gallery container layout */
+.gallery {
+  display: flex; /* Flexbox layout for flexible item arrangement */
+  flex-direction: row; /* Aligns items in a row */
+  column-gap: 20px; /* Adds space between columns */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+  row-gap: 10px; /* Adds space between rows */
+}
+
+/* Description section under each image */
+div.desc {
+  text-align: center; /* Centers the text */
+  width: 100%; /* Ensures description takes up full width */
+}
+
+/* Icon inside the description */
+.desc i {
+  float: left !important; /* Floats the icon to the left */
+  padding-left: 10px; /* Adds space to the left of the icon */
+}
+
+/* Buy button inside the description */
+.desc button {
+  float: right !important; /* Floats the button to the right */
+  margin-right: 10px; /* Adds space to the right of the button */
+  margin-bottom: 5px; /* Adds space below the button */
+}
+
+/* Book image size */
+.gallery img {
+  height: 250px; /* Sets a fixed height for the images */
+  width: 200px; /* Sets a fixed width for the images */
+}
+
+/* Back button style */
+.btn {
+  display: block; /* Makes the button block-level */
+  border-radius: 5px; /* Rounds the corners of the button */
+  color: white; /* Sets text color to white */
+  background-color: blue; /* Sets the button background to blue */
+  font-size: 20px; /* Sets the font size */
+  text-decoration: none; /* Removes underline from the button */
+  width: fit-content; /* Adjusts the width based on content */
+  height: fit-content; /* Adjusts the height based on content */
+  padding: 5px; /* Adds padding around the button */
+}
+
+/* Hover effect for the back button */
+.btn:hover {
+  background-color: rgb(31, 199, 106); /* Changes background color on hover */
+}

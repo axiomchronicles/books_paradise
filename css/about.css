@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  .navbar{
+    display: flex;
+    background-color:rgb(60, 124, 197);
+    position: fixed;
+    top:0;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  .nav-right{
+    text-align: right;
+    float:right;
+  }
+  
+  .nav-right li {
+      display: inline;
+      float: left;
+      padding-left: 15px;
+    }
+  
+    .nav-right li a {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color:white;
+    }
+  
+    .nav-right  li ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+  
+    .nav-right li a:hover {
+      background-color: rgb(31, 199, 106);
+    }
+  
+    .nav-right .active {
+      background-color: #04AA6D;
+  }
+  
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .row {
+    display: flex;  /* Use flexbox for row */
+    flex-wrap: wrap;  /* Allow wrapping if the screen size is small */
+    justify-content: space-evenly;  /* Space out the items evenly */
+    gap: 20px;  /* Space between the cards */
+  }
+  
+  .column {
+    flex: 1 1 22%;  /* Allow 4 items to fit in a row */
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    width: 100%;  /* Make sure the card width is responsive */
+    height: 400px;
+  }
+  
+  .about-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f7f6;  /* Soft background color */
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+    max-width: 900px;
+    margin: 50px auto;  /* Center the section */
+    font-family: 'Roboto', sans-serif;  /* Modern font */
+  }
+  
+  .about-section h1 {
+    font-size: 2.5em;
+    color: #2d3e50;  /* Dark blue color for header */
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;  /* Lighter text color */
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-section p:first-of-type {
+    font-weight: bold;
+    font-style: italic;  /* Make the first paragraph stand out */
+  }
+  
+  .about-section a {
+    text-decoration: none;
+    color: #04AA6D;  /* Highlighted links */
+    font-weight: bold;
+  }
+  
+  .about-section a:hover {
+    color: #2d3e50;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      flex: 1 1 100%;  /* Make each column full width on smaller screens */
+      display: block;
+    }
+  }

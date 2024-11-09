@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - Book's Paradise</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #333; /* Dark background for navigation */
+            padding: 10px 0; /* Padding for spacing */
+            color: #fff; /* White text color */
+        }
+
+        nav .nav-right {
+            display: flex; /* Flexbox for alignment */
+            justify-content: flex-end; /* Align items to the right */
+            list-style-type: none; /* Remove default list styling */
+        }
+
+        nav li {
+            margin: 0 15px; /* Horizontal spacing between navigation items */
+        }
+
+        nav a {
+            color: #fff; /* White text for links */
+            text-decoration: none; /* Remove underlines */
+            font-size: 18px; /* Font size for links */
+        }
+
+        /* Book details section styles */
+        .book-details {
+            display: flex; /* Flexbox for layout */
+            flex-wrap: wrap; /* Allow items to wrap */
+            justify-content: center; /* Center align items */
+            padding: 30px; /* Padding around the section */
+        }
+
+        .book-image {
+            flex: 1; /* Flex value to define the size */
+            max-width: 40%; /* Maximum width of the image container */
+            padding-right: 20px; /* Right padding for spacing */
+        }
+
+        .book-image img {
+            width: 50%; /* Make the image fill the container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners for the image */
+        }
+
+        .book-info {
+            flex: 2; /* Flex value for the book info container */
+            max-width: 50%; /* Maximum width */
+            padding-left: 20px; /* Left padding for spacing */
+        }
+
+        .book-info h1 {
+            font-size: 32px; /* Font size for the book title */
+            margin-bottom: 15px; /* Bottom margin for spacing */
+            color: #333; /* Dark color for the title */
+        }
+
+        .book-info p {
+            font-size: 18px; /* Font size for text */
+            line-height: 1.6; /* Line height for readability */
+            color: #555; /* Lighter text color */
+            margin-bottom: 10px; /* Margin at the bottom of each paragraph */
+        }
+
+        .book-info .price {
+            font-size: 24px; /* Larger font size for price */
+            font-weight: bold; /* Bold for emphasis */
+            color: #e74c3c; /* Red color for price */
+            margin-bottom: 20px; /* Bottom margin for spacing */
+        }
+
+        .book-info .author {
+            font-size: 20px; /* Slightly larger font size for author */
+            color: #555; /* Lighter color for author name */
+            margin-bottom: 10px; /* Bottom margin */
+        }
+
+        /* Buy button styling */
+        .book-info .buy-btn {
+            background-color: #27ae60; /* Green button background */
+            color: #fff; /* White text color */
+            padding: 10px 20px; /* Padding inside the button */
+            font-size: 18px; /* Font size for button text */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners for the button */
+            cursor: pointer; /* Pointer cursor for button */
+            transition: background-color 0.3s; /* Smooth transition on hover */
+        }
+
+        .book-info .buy-btn:hover {
+            background-color: #2ecc71; /* Change color on hover */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333; /* Dark background */
+            color: #fff; /* White text color */
+            text-align: center; /* Center-align text */
+            padding: 20px 0; /* Padding for spacing */
+            position: relative;
+            bottom: 0; /* Position at the bottom of the page */
+            width: 100%; /* Full width */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <div class="nav-right">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./register.html">Create Account</a></li>
+        </div>
+    </nav>
+
+    <!-- Book details section -->
+    <div class="book-details">
+        <!-- Book image -->
+        <div class="book-image">
+            <img src="./img/adams_world.jpg" alt="Book Image">
+        </div>
+        <!-- Book information -->
+        <div class="book-info">
+            <h1>Adam's World</h1>
+            <p class="author">Author: Pawan Kumar</p>
+            <p class="price">Price: ₹200</p>
+            <p class="publisher">Publisher: Team Hawk</p>
+            <p class="publication-date">Published on: November 10, 2024</p>
+            <p class="description">
+                "Adam's World" is a gripping adventure novel that takes the reader on an unforgettable journey. Packed with thrilling moments, it explores themes of courage, friendship, and survival. Follow Adam as he navigates through the uncharted territory, discovering his own limits while battling unforeseen challenges. A tale that will keep you on the edge of your seat from start to finish.
+            </p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed & Designed by <strong>Pawan Kumar</strong></p>
+        <p>Contributors: <strong>Deepakshi Sharma, Yash, Pawan Kumar, Khushi</strong></p>
+    </footer>
+
+</body>
+
+</html>

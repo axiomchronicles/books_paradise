@@ -1,0 +1,241 @@
+/* Removes default margin from the body and sets a clean font */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar styling: sets layout as flex for alignment, background color, 
+   and fixes navbar at the top with full width */
+.navbar {
+  display: flex;
+  background-color: rgb(60, 124, 197);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 20px;
+}
+
+/* Aligns navbar items to the right */
+.nav-right {
+  text-align: right;
+  float: right;
+}
+
+/* First section styling: sets padding and background with a fixed image
+   covering the whole section and no repeating */
+.section-1 {
+  padding: 40px;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230426/pngtree-an-old-library-or-book-room-with-some-books-and-plants-image_2521166.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 550px;
+  background-size: 100% 100%;
+}
+
+/* Section 1 text styling */
+.section-1-text {
+  display: block;
+  border: black;
+}
+
+/* Styling for main heading inside Section 1 */
+h1 {
+  font-size: 100px;
+  color: white;
+}
+
+/* Paragraph text styling in Section 1 */
+.section-1 p {
+  font-size: 20px;
+  color: white;
+}
+
+/* Section 2 styling with padding */
+.section-2 {
+  padding: 35px;
+}
+
+/* Ensures images in gallery display inline */
+.gallery div {
+  display: inline !important;
+}
+
+/* Removes underline from links in Section 2 */
+.section-2 a {
+  text-decoration: none;
+}
+
+/* Sets paragraph text color and centers text in Section 2 */
+.section-2 p {
+  color: black;
+  text-align: center;
+}
+
+/* Border appears on hover in gallery items */
+div.gallery a:hover {
+  border: 1px solid white;
+}
+
+/* Centers text in the gallery image description */
+div.gallery image-holder desc {
+  text-align: center;
+}
+
+/* Image styling for consistent height and width */
+img {
+  height: 300px;
+  width: 250px;
+}
+
+/* Button styling: sets block display, rounded corners, color, background,
+   and size with padding */
+.btn {
+  display: block;
+  border-radius: 5px;
+  color: white;
+  background-color: blue;
+  font-size: 20px;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+}
+
+/* Changes button background color on hover */
+.btn:hover {
+  background-color: rgb(31, 199, 106);
+}
+
+/* Styling for list items in the navbar */
+li {
+  display: inline;
+  float: left;
+  padding-left: 15px;
+}
+
+/* Links inside list items: sets block display, padding, no underline, and white color */
+li a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Unordered list styling for navbar: removes list style and sets background color */
+li ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Changes background color on hover over list links */
+li a:hover {
+  background-color: rgb(31, 199, 106);
+}
+
+/* Active link styling in navbar */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Section 3 padding */
+.section-3 {
+  padding: 35px;
+}
+
+/* Card view styling: sets float and width for layout */
+.view-card {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Card styling: adds shadow, padding, and centers text */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  display: inline;
+}
+
+/* Increases shadow on hover for cards */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Container styling with padding and alignment */
+.container {
+  padding: 2px 16px;
+  align-items: center;
+}
+
+/* Section 4 padding */
+.section-4 {
+  padding: 35px;
+}
+
+/* Brand logo container styling: sets width and inline display */
+.brand {
+  width: 20%;
+  display: inline;
+}
+
+/* Brand image styling with fixed height */
+.brand img {
+  height: 175px;
+}
+
+/* Section 5 contact form styling */
+.section-5 {
+  background-color: rgb(224, 219, 219);
+  display: grid; 
+}
+
+/* Styling for form inputs, select, and textarea */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Submit button styling with background color and padding */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover effect for submit button */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the container of the contact section with rounded corners */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Column styling for a two-column layout */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after columns to maintain layout */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

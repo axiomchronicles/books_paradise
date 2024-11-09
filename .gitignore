@@ -1,0 +1,18 @@
+# Log files
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Test coverage
+/coverage/
+
+# Git directories
+.git/
+/exempt/
+
