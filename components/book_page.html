@@ -135,7 +135,7 @@
     <div class="book-details">
         <!-- Book image -->
         <div class="book-image">
-            <img src="./img/adams_world.jpg" alt="Book Image">
+            <img id="book-image" src="./img/adams_world.jpg" alt="Book Image">
         </div>
         <!-- Book information -->
         <div class="book-info">
@@ -156,6 +156,26 @@
         <p>Developed & Designed by <strong>Pawan Kumar</strong></p>
         <p>Contributors: <strong>Deepakshi Sharma, Yash, Pawan Kumar, Khushi</strong></p>
     </footer>
+
+    <script>
+        // Function to get query parameter by name
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Check for img_token in query parameters
+        const imgToken = getQueryParameter('img_token');
+        resultImage = imgToken.replace(/'/g, "");
+
+        // Debug 
+        console.log(resultImage)
+        if (resultImage) {
+            // Update the book image source
+            const bookImage = document.getElementById('book-image');
+            bookImage.src = `./img/${resultImage}`;
+        }
+    </script>
 
 </body>
 
